@@ -1,0 +1,45 @@
+﻿<div class="panel panel-success">
+    <div class="panel-heading">
+        <h4>
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            Shopping Cart
+        </h4>
+    </div>
+    <div class="panel-body">
+        <div class="row" ng-if="cartGoods.length <= 0">
+            <h3>
+                Sorry there is nothing.Please go to goods page.
+                <a ui-sref="goods">Click here</a>
+            </h3>
+        </div>
+        <table class="table table-striped" ng-if="cartGoods.length > 0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Goods Name</th>
+                    <th>Goods Num</th>
+                    <th>Goods Price</th>
+                    <th>Qty</th>
+                    <th>Total Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="oneCartGoods in cartGoods">
+                    <td>{{$index}}</td>
+                    <td>{{oneCartGoods.goodsName}}</td>
+                    <td>{{oneCartGoods.goodsNum}}</td>
+                    <td>{{oneCartGoods.price}}</td>
+                    <td>
+                        <input ng-model="oneCartGoods.qty" type="number"/>
+                    </td>
+                    <td>{{oneCartGoods.price*oneCartGoods.qty}}(Unit:{{oneCartGoods.unit}})</td>
+                    <td><a ng-click="removeOneGoods(oneCartGoods)">[X]</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="panel-footer" ng-if="cartGoods.length > 0">
+        All Goods' Total Price: {{totalPrice()}}
+    </div>
+</div>

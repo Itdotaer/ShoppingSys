@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C82334F0-5746-4DB6-97AE-6C1C965E4955}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nemo</RootNamespace>
+    <AssemblyName>Nemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\images\github.png" />
+    <Content Include="app\images\iphone5s.jpg" />
+    <Content Include="app\scripts\controllers\appCtrl.js" />
+    <Content Include="app\scripts\controllers\cart\cartController.js" />
+    <Content Include="app\scripts\controllers\goods\goodsController.js" />
+    <Content Include="app\scripts\controllers\usres\userController.js" />
+    <Content Include="app\scripts\directives\nemo-footer\footerCtrl.js" />
+    <Content Include="app\scripts\directives\nemo-footer\footerDirective.js" />
+    <Content Include="app\scripts\directives\nemo-footer\footerModule.js" />
+    <Content Include="app\scripts\directives\nemo-footer\nemo-footer.html" />
+    <Content Include="app\scripts\directives\nemo-nav\navModule.js" />
+    <Content Include="app\scripts\directives\nemo-nav\navCtrl.js" />
+    <Content Include="app\scripts\directives\nemo-nav\navDirective.js" />
+    <Content Include="app\scripts\directives\nemo-nav\nemo-nav.html" />
+    <Content Include="app\scripts\services\cartService.js" />
+    <Content Include="app\scripts\services\goodsService.js" />
+    <Content Include="app\scripts\services\logger.js" />
+    <Content Include="app\scripts\services\mockData\mockDataService.js" />
+    <Content Include="app\scripts\services\servicesModule.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular-animate.min.js.map" />
+    <Content Include="app\scripts\vendor\angularJS\angular-route.min.js.map" />
+    <Content Include="app\scripts\vendor\angularJS\angular-sanitize.min.js.map" />
+    <Content Include="app\scripts\vendor\angularJS\angular.min.js.map" />
+    <Content Include="app\scripts\vendor\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="app\scripts\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="app\scripts\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\scripts\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\scripts\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Properties\PublishProfiles\eco-shoppingsys - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\eco-shoppingsys - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\scripts\app.js" />
+    <Content Include="app\scripts\controllers\mainCtrl.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular-animate.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular-animate.min.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular-route.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular-route.min.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular-sanitize.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular-sanitize.min.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular-ui-router.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular-ui-router.min.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular.js" />
+    <Content Include="app\scripts\vendor\angularJS\angular.min.js" />
+    <Content Include="app\scripts\vendor\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="app\scripts\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="app\scripts\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="app\scripts\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="app\scripts\vendor\bootstrap\css\bootstrap.Superhero.min.css" />
+    <Content Include="app\scripts\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\scripts\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="app\scripts\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="app\scripts\vendor\bootstrap\js\npm.js" />
+    <Content Include="app\scripts\vendor\jQuery\jquery-1.11.2.min.js" />
+    <Content Include="app\styles\app.css" />
+    <Content Include="app\views\cart\cart.html" />
+    <Content Include="app\views\goods\goods.html" />
+    <Content Include="app\views\main.html" />
+    <Content Include="index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\scripts\filters\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>36628</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:36628/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

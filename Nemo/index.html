@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Harry Hu">
+    <meta name="gmail" content="hujiangtao1235@qq.com">
+    <meta name="github" content="https://github.com/SoftwareDreamer" />
+
+    <title>Shopping Sys</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" type="text/css" href="/app/scripts/vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/app/scripts/vendor/bootstrap/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/css/toastr.css" />
+    
+    <!--Inject JQuery-->
+    <script type="text/javascript" src="/app/scripts/vendor/jQuery/jquery-1.11.2.min.js"></script>
+
+    <!--Bootscript related js files-->
+    <script type="text/javascript" src="/app/scripts/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/js/toastr.min.js"></script>
+
+    <!--Angular Core Scripts-->
+    <script type="text/javascript" src="/app/scripts/vendor/angularJS/angular.js"></script>
+    <script type="text/javascript" src="/app/scripts/vendor/angularJS/angular-ui-router.js"></script>
+
+</head>
+    <body ng-app="app">
+        <div ng-controller="appController">
+            <!--Nav bar directive-->
+            <nemo-nav app-info="appInfo"></nemo-nav>
+
+            <div class="container" ui-view></div>
+        
+            <!--Footer directive-->
+            <nemo-footer app-info="appInfo"></nemo-footer>
+
+            <!--Inject angular related js files-->
+            <script type="text/javascript" src="/app/scripts/app.js"></script>
+            <script type="text/javascript" src="/app/scripts/controllers/appCtrl.js"></script>
+            <script type="text/javascript" src="/app/scripts/controllers/mainCtrl.js"></script>
+            <script type="text/javascript" src="/app/scripts/controllers/goods/goodsController.js"></script>
+            <script type="text/javascript" src="/app/scripts/controllers/cart/cartController.js"></script>
+
+            <!--Directives related-->
+            <script type="text/javascript" src="/app/scripts/directives/nemo-nav/navModule.js"></script>
+            <script type="text/javascript" src="/app/scripts/directives/nemo-nav/navCtrl.js"></script>
+            <script type="text/javascript" src="/app/scripts/directives/nemo-nav/navDirective.js"></script>
+
+            <script type="text/javascript" src="/app/scripts/directives/nemo-footer/footerModule.js"></script>
+            <script type="text/javascript" src="/app/scripts/directives/nemo-footer/footerCtrl.js"></script>
+            <script type="text/javascript" src="/app/scripts/directives/nemo-footer/footerDirective.js"></script>          
+            
+            <!--Services related-->
+            <script type="text/javascript" src="/app/scripts/services/servicesModule.js"></script>
+            <script type="text/javascript" src="/app/scripts/services/logger.js"></script>
+            <script type="text/javascript" src="/app/scripts/services/mockData/mockDataService.js"></script>
+            <script type="text/javascript" src="/app/scripts/services/goodsService.js"></script>
+            <script type="text/javascript" src="/app/scripts/services/cartService.js"></script>            
+        </div>
+    </body>
+</html>

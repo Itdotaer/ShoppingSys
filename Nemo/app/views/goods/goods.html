@@ -1,0 +1,13 @@
+﻿<div class="container">
+    <div class="col-sm-6 col-md-4" ng-repeat="oneGoods in goods">
+        <div class="thumbnail">
+            <img data-src="holder.js/100%x200" alt="100%x200" src="/app/images/iphone5s.jpg" data-holder-rendered="true" style="height: 320px; width: 100%; display: block;">
+            <div class="caption">
+                <h3>{{oneGoods.goodsName}}</h3>
+                Description:<p>{{oneGoods.goodsDescription}}</p>
+                Price: <p>{{oneGoods.price}}(单位{{oneGoods.unit}})</p>
+                <button type="button" class="btn btn-success" ng-click="addToCart(oneGoods)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>

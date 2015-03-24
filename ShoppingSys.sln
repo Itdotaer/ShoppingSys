@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Partial", "Partial", "{4DD1FDBC-CB13-4353-98BE-677BFF5AEE4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nemo", "Nemo\Nemo.csproj", "{C82334F0-5746-4DB6-97AE-6C1C965E4955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{25667505-76BE-4933-8DF3-BCCB40EB75CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{C3CDB017-1D45-4F79-98F8-62CF6B2D9195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteSomeThing", "WriteSomeThing\WriteSomeThing.csproj", "{D08A8A86-F1F1-4D9F-94EA-B8C80E6CC710}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://harryhu1990.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Nemo\\Nemo.csproj
+		SccProjectTopLevelParentUniqueName1 = ShoppingSys.sln
+		SccProjectName1 = Nemo
+		SccLocalPath1 = Nemo
+		SccProjectUniqueName2 = Demo\\Demo.csproj
+		SccProjectTopLevelParentUniqueName2 = ShoppingSys.sln
+		SccProjectName2 = Demo
+		SccLocalPath2 = Demo
+		SccProjectUniqueName3 = WriteSomeThing\\WriteSomeThing.csproj
+		SccProjectName3 = WriteSomeThing
+		SccLocalPath3 = WriteSomeThing
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C82334F0-5746-4DB6-97AE-6C1C965E4955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82334F0-5746-4DB6-97AE-6C1C965E4955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82334F0-5746-4DB6-97AE-6C1C965E4955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82334F0-5746-4DB6-97AE-6C1C965E4955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25667505-76BE-4933-8DF3-BCCB40EB75CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25667505-76BE-4933-8DF3-BCCB40EB75CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25667505-76BE-4933-8DF3-BCCB40EB75CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25667505-76BE-4933-8DF3-BCCB40EB75CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D08A8A86-F1F1-4D9F-94EA-B8C80E6CC710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08A8A86-F1F1-4D9F-94EA-B8C80E6CC710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08A8A86-F1F1-4D9F-94EA-B8C80E6CC710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08A8A86-F1F1-4D9F-94EA-B8C80E6CC710}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C82334F0-5746-4DB6-97AE-6C1C965E4955} = {4DD1FDBC-CB13-4353-98BE-677BFF5AEE4A}
+		{25667505-76BE-4933-8DF3-BCCB40EB75CA} = {4DD1FDBC-CB13-4353-98BE-677BFF5AEE4A}
+	EndGlobalSection
+EndGlobal
